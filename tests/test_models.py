@@ -1,3 +1,5 @@
+import pytest
+
 from src.models import LogAnalysis
 
 def test_valid_analysis():
@@ -8,5 +10,15 @@ def test_valid_analysis():
         root_cause="Container crash",
         recommendation="Check logs"
     )
+    assert analysis.confidence == 85
 
-    assert analysis.severity == "Medium"
+
+def test_invalid_confidence():
+    with pytest.raises(Exception):
+        LogAnalysis(
+            category="Application",
+            confidence=150,
+            root_cause="Container crash",
+            severity="Medium",
+            recommendation="Check logs"
+            )

@@ -1,5 +1,11 @@
 # AI Kubernetes Log Analyzer
 
+# AI Kubernetes Log Analyzer
+
+![Python](https://img.shields.io/badge/Python-3.13-blue)
+![Ollama](https://img.shields.io/badge/Ollama-Qwen2.5-green)
+![Tests](https://img.shields.io/badge/Tests-Passing-brightgreen)
+
 An AI-powered Kubernetes troubleshooting assistant that analyzes Kubernetes pod failure logs and produces structured root-cause analysis using a local LLM running on Ollama.
 
 ## Features
