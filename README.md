@@ -93,6 +93,10 @@ Container crashes and fails to restart successfully
 Recommendation:
 Check application logs and verify application dependencies.
 ```
+## Unit Tests
+
+![Tests](docs/tests-passed.png)
+![Tests](docs/sample-output.png)
 
 ## Future Enhancements
 
